@@ -26,7 +26,7 @@ let board, turn, winner, tie
 
 /*------------------------ Cached Element References ------------------------*/
 
-const slotEls = document.querySelectorAll('.circle')
+const circleEls = document.querySelectorAll('.cir')
 const messageEl = document.getElementById('message')
 const resetBtnEl = document.getElementById('reset')
 
@@ -42,13 +42,12 @@ resetBtnEl.addEventListener('click', init)
 
 init()
 function init() {
- board = [
-   1, null, null, null, null, null, null,
+ board = [null, null, null, null, null, null, null,
    null, null, null, null, null, null, null,
    null, null, null, null, null, null, null,
    null, null, null, null, null, null, null,
    null, null, null, null, null, null, null,
-   null, null, null, null, null, null, null ]
+   null, null, null, null, null, null, null,]
  
  turn = 1
  winner = false
@@ -62,18 +61,18 @@ function render() {
 function updateBoard() {
   board.forEach((element, idx) => {
       if (element === 1) {
-        slotEls[idx].innerText = 'blue'
+        circleEls[idx].innerText = 'x'
       } else if (element === -1) {
-        slotEls[idx].innerText = 'black'
+        circleEls[idx].innerText = 'o'
       } else {
-        slotEls[idx].innerText = ''
+        circleEls[idx].innerText = ''
       }
   })
 }
 
 function updateMessage() {
   if (winner === false && tie === false) {
-      messageEl.textContent = (turn === 1 ? 'Blue players turn' : 'Black players turn')
+      messageEl.textContent = (turn === 1 ? 'Blue players turn.' : 'Black players turn.')
   } else if (winner === false && tie === true) {
       messageEl.textContent = "You Tied!"
   } else {
@@ -82,13 +81,13 @@ function updateMessage() {
 }
 function handleClick(evt) {
   // console.log(evt);
-  let sqIdx = +evt.target.id.replace('cr','')
-  if (board[sqIdx] !== null) {
+  let crIdx = +evt.target.id.replace('cr','')
+  if (board[crIdx] !== null) {
       return
   } else if (winner === true) {
       return
   }
-  placeToken(sqIdx)
+  placeToken(crIdx)
   checkForTie()
   checkForWinner()
   switchPlayerTurn()
