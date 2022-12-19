@@ -1,41 +1,7 @@
-body {
-  text-align: center;
-	margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  font-family: 'Sulphur Point', sans-serif;
-}
 section.board {
   display: grid;
   grid-template-rows: repeat(6, 10vmin);
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
-}
-div {
-  border: 3px solid rgba(0, 30, 68, 0.049);
-  font-size: 8vmin;
-  text-align: center;
-  vertical-align: middle;
-  display:flex;
-  border-radius: 50%;
-  margin: 8px;
-  background: rgba(55, 79, 120, 0.373);
-  -webkit-box-shadow: inset 3px 3px 3px #000;
--moz-box-shadow: inset 3px 3px 3px #000;
-}
-button {
-  border-radius: 8px;
-  margin: 30px;
-  font-family: 'Sulphur Point', sans-serif;
-  background-color: rgb(79, 122, 149);
-  color: white;
-} 
-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+ }
+ 
