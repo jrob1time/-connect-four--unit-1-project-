@@ -55,3 +55,7 @@ function init() {
  tie = false
  render()
 }
+function render() {
+  updateBoard()
+  updateMessage()
+}
