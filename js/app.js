@@ -28,6 +28,7 @@ let board, turn, winner, tie
 
 const slotEls = document.querySelectorAll('.circle')
 const messageEl = document.getElementById('message')
+const resetBtnEl = document.getElementById('reset')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
