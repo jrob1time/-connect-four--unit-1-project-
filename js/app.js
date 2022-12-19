@@ -34,7 +34,6 @@ const resetBtnEl = document.getElementById('reset')
 /*----------------------------- Event Listeners -----------------------------*/
 
 document.querySelector('.board').addEventListener('click', handleClick)
- 
 resetBtnEl.addEventListener('click', init)
 
 
@@ -86,13 +85,13 @@ function handleClick(evt) {
   } else if (winner === true) {
       return
   }
-  placePiece(crIdx)
+  placeToken(crIdx)
   checkForTie()
   checkForWinner()
   switchPlayerTurn()
   render()
 }
-function placePiece(idx) {
+function placeToken(idx) {
   board[idx] = turn
 }
 function checkForTie() {
