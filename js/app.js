@@ -34,6 +34,7 @@ const resetBtnEl = document.getElementById('reset')
 /*----------------------------- Event Listeners -----------------------------*/
 
 document.querySelector('.board').addEventListener('click', handleClick)
+
 resetBtnEl.addEventListener('click', init)
 
 
@@ -42,7 +43,7 @@ resetBtnEl.addEventListener('click', init)
 init()
 function init() {
  board = [
-   null, null, null, null, null, null, null,
+   1, null, null, null, null, null, null,
    null, null, null, null, null, null, null,
    null, null, null, null, null, null, null,
    null, null, null, null, null, null, null,
@@ -69,6 +70,7 @@ function updateBoard() {
       }
   })
 }
+
 function updateMessage() {
   if (winner === false && tie === false) {
       messageEl.textContent = (turn === 1 ? 'Blue players turn' : 'Black players turn')
@@ -79,27 +81,26 @@ function updateMessage() {
   }
 }
 function handleClick(evt) {
-  let crIdx = +evt.target.id.replace('cr', '')
-  if (board[crIdx] !== null) {
+  // console.log(evt);
+  let sqIdx = +evt.target.id.replace('cr','')
+  if (board[sqIdx] !== null) {
       return
   } else if (winner === true) {
       return
   }
-  placeToken(crIdx)
+  placeToken(sqIdx)
   checkForTie()
   checkForWinner()
   switchPlayerTurn()
   render()
 }
+
 function placeToken(idx) {
   board[idx] = turn
 }
 function checkForTie() {
   if (board.includes(null)) return
   tie = true
-}
-function switchPlayerTurn() {
-  if (!winner) turn *= -1
 }
 function checkForWinner() {
   winningCombos.forEach(function(arr) {
@@ -111,4 +112,7 @@ function checkForWinner() {
           winner = true
       }
   })
+}
+function switchPlayerTurn() {
+  if (!winner) turn *= -1
 }
