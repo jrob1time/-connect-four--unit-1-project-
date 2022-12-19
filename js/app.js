@@ -102,3 +102,14 @@ function checkForTie() {
 function switchPlayerTurn() {
   if (!winner) turn *= -1
 }
+function checkForWinner() {
+  winningCombos.forEach(function(arr) {
+      let sum = 0
+      arr.forEach(function(idx) {
+          sum += board[idx]
+      })
+      if (sum === 4 || sum === -4) {
+          winner = true
+      }
+  })
+}
