@@ -12,6 +12,9 @@ let board, turn, winner, tie
 
 /*----------------------------- Event Listeners -----------------------------*/
 
+document.querySelector('.board').addEventListener('click', handleClick)
+ 
+resetBtnEl.addEventListener('click', init)
 
 
 /*-------------------------------- Functions --------------------------------*/
