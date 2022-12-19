@@ -94,14 +94,19 @@ function handleClick(evt) {
   render()
 }
 function placeToken(idx) {
-  board[idx] = turn
+  for (let i = (idx + 35); i > -1; i-=7){
+    if (board[i] === null){
+      return board[i] = turn
+    }
+  }
 }
 function checkForTie() {
   if (board.includes(null)) return
   tie = true
 }
 function clickSlot(){
-  let cir = document.querySelector('.board div')
+
+  // let cir = document.querySelector('.board div')
   // grab the board and its individual divs by column??
   // by each column and +7 minus one (open spot needs to be avaible up to < index of 5 )
   // let null = open spot until defined by token and if piece is placed. log taken or can't placed here
