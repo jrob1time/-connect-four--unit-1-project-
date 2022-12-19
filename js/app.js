@@ -92,3 +92,6 @@ function handleClick(evt) {
   switchPlayerTurn()
   render()
 }
+function placePiece(idx) {
+  board[idx] = turn
+}
