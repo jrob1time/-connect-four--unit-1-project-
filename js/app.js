@@ -8,6 +8,8 @@ let board, turn, winner, tie
 
 /*------------------------ Cached Element References ------------------------*/
 
+const slotEls = document.querySelectorAll('.circle')
+const messageEl = document.getElementById('message')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
