@@ -1,3 +1,14 @@
+body {
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: 'Sulphur Point', sans-serif;
+ } 
 section.board {
   display: grid;
   grid-template-rows: repeat(6, 10vmin);
