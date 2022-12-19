@@ -29,12 +29,12 @@ const circleEls = document.querySelectorAll('.cir')
 const messageEl = document.getElementById('message')
 const resetBtnEl = document.getElementById('reset-button')
 
-
 /*----------------------------- Event Listeners -----------------------------*/
 
 document.querySelector('.board').addEventListener('click', handleClick)
 
 resetBtnEl.addEventListener('click', init)
+
 
 
 /*-------------------------------- Functions --------------------------------*/
@@ -60,9 +60,9 @@ function render() {
 function updateBoard() {
   board.forEach((element, idx) => {
       if (element === 1) {
-        circleEls[idx].innerText = 'i'
+        circleEls[idx].innerText = '👌'
       } else if (element === -1) {
-        circleEls[idx].innerText = 'j'
+        circleEls[idx].innerText = '🤘'
       } else {
         circleEls[idx].innerText = ''
       }
@@ -78,14 +78,11 @@ function updateMessage() {
   }
 }
 function handleClick(evt) {
-  // console.log(evt.target.id);
   let crIdx = +evt.target.id.replace('cr','')
-  // console.log(board);
-  // console.log(board[+crIdx]);
   if (board[crIdx] !== null) {
       return
-  } else if (winner === true) {
-      return
+  // } else if (winner === true) {
+  //     return
   }
   placeToken(crIdx)
   checkForTie()
@@ -103,15 +100,6 @@ function placeToken(idx) {
 function checkForTie() {
   if (board.includes(null)) return
   tie = true
-}
-function clickSlot(){
-
-  // let cir = document.querySelector('.board div')
-  // grab the board and its individual divs by column??
-  // by each column and +7 minus one (open spot needs to be avaible up to < index of 5 )
-  // let null = open spot until defined by token and if piece is placed. log taken or can't placed here
-
-
 }
 function checkForWinner() {
   winningCombos.forEach(function(arr) {
