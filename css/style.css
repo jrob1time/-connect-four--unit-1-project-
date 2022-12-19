@@ -14,9 +14,10 @@ section.board {
   grid-template-rows: repeat(6, 10vmin);
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
+  boarder; border: 1px solid black;
 }
 div {
-  border: 2px solid black;
+  border: 1px solid black;
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
