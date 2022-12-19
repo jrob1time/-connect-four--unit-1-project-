@@ -15,12 +15,13 @@ section.board {
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
 }
-
 div {
-  border: 3px solid black;
+  border: 2px solid black;
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
+  border-radius: 50%;
+  margin: 4px;
 }
 
 button {
