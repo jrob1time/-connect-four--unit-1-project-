@@ -62,11 +62,11 @@ function render() {
 function updateBoard() {
   board.forEach((element, idx) => {
       if (element === 1) {
-          squareEls[idx].innerText = 'blue'
+        slotEls[idx].innerText = 'blue'
       } else if (element === -1) {
-          squareEls[idx].innerText = 'black'
+        slotEls[idx].innerText = 'black'
       } else {
-          squareEls[idx].innerText = ''
+        slotEls[idx].innerText = ''
       }
   })
 }
@@ -79,3 +79,10 @@ function updateMessage() {
       messageEl.textContent = (turn === 1 ? 'Blue player wins!' : 'Black player wins!')
   }
 }
+function handleClick(evt) {
+  let crIdx = +evt.target.id.replace('cr', '')
+  if (board[crIdx] !== null) {
+      return
+  } else if (winner === true) {
+      return
+  }
