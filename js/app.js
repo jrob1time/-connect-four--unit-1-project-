@@ -70,3 +70,12 @@ function updateBoard() {
       }
   })
 }
+function updateMessage() {
+  if (winner === false && tie === false) {
+      messageEl.textContent = (turn === 1 ? 'Blue players turn' : 'Black players turn')
+  } else if (winner === false && tie === true) {
+      messageEl.textContent = "You Tied!"
+  } else {
+      messageEl.textContent = (turn === 1 ? 'Blue player wins!' : 'Black player wins!')
+  }
+}
