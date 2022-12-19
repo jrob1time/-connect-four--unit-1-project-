@@ -99,4 +99,6 @@ function checkForTie() {
   if (board.includes(null)) return
   tie = true
 }
-
+function switchPlayerTurn() {
+  if (!winner) turn *= -1
+}
