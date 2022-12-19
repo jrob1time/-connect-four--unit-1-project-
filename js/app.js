@@ -59,3 +59,14 @@ function render() {
   updateBoard()
   updateMessage()
 }
+function updateBoard() {
+  board.forEach((element, idx) => {
+      if (element === 1) {
+          squareEls[idx].innerText = 'blue'
+      } else if (element === -1) {
+          squareEls[idx].innerText = 'black'
+      } else {
+          squareEls[idx].innerText = ''
+      }
+  })
+}
