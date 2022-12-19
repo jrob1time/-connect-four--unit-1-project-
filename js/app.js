@@ -68,7 +68,6 @@ function updateBoard() {
       }
   })
 }
-
 function updateMessage() {
   if (winner === false && tie === false) {
       messageEl.textContent = (turn === 1 ? 'Blue players turn.' : 'Black players turn.')
@@ -81,7 +80,7 @@ function updateMessage() {
 function handleClick(evt) {
   console.log(evt.target.id);
   let crIdx = +evt.target.id.replace('cr','')
-  console.log(board[6]);
+  console.log(board);
   console.log(board[+crIdx]);
   if (board[crIdx] !== null) {
       return
@@ -94,13 +93,20 @@ function handleClick(evt) {
   switchPlayerTurn()
   render()
 }
-
 function placeToken(idx) {
   board[idx] = turn
 }
 function checkForTie() {
   if (board.includes(null)) return
   tie = true
+}
+function clickSlot(){
+  let cir = document.querySelector('.board div')
+  // grab the board and its individual divs by column??
+  // by each column and +7 minus one (open spot needs to be avaible up to < index of 5 )
+  // let null = open spot until defined by token and if piece is placed. log taken or can't placed here
+
+
 }
 function checkForWinner() {
   winningCombos.forEach(function(arr) {
