@@ -14,7 +14,8 @@ section.board {
   grid-template-rows: repeat(6, 10vmin);
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
-  boarder; border: 1px solid black;
+  border: 1px solid black;
+  margin: 24px;
 }
 div {
   border: 1px solid black;
@@ -22,18 +23,23 @@ div {
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
-  margin: 4px;
+  margin: 8px;
 }
-
 button {
-  border-radius: 8px;
-  margin: 30px;
-  font-family: 'Sulphur Point', sans-serif;
-  background-color: rgb(79, 122, 149);
+  background-color: #969696; /* Green */
+  border: none;
   color: white;
+  padding: 15px 30px;
+  margin: 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Sulphur Point', sans-serif;
+  border: 1px solid black;
+  border-radius: 34px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 } 
 button:hover {
-  background-color: rgb(238, 199, 199);
+  background-color: rgb(0, 0, 0);
   color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
