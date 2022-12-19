@@ -86,3 +86,9 @@ function handleClick(evt) {
   } else if (winner === true) {
       return
   }
+  placePiece(crIdx)
+  checkForTie()
+  checkForWinner()
+  switchPlayerTurn()
+  render()
+}
