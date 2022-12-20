@@ -78,8 +78,8 @@ function updateMessage() {
   }
 }
 function handleClick(evt) {
-
   let crIdx = +evt.target.id.replace('cr','')
+  // console.log(crIdx);
   if (board[crIdx] !== null) {
       return
   } else if (winner === true) {

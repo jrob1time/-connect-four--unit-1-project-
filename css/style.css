@@ -1,13 +1,14 @@
 body {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #ffffff;
+  font-family: 'Sulphur Point', sans-serif;
   margin: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  font-family: 'Sulphur Point', sans-serif;
+ ;
 }
 section.board {
   display: grid;
@@ -23,7 +24,7 @@ section.board {
 div {
   border: 1px solid rgb(0, 0, 0);
   font-size: 6vmin;
-  border-radius: 50%;
+  border-radius: 50px;
   margin: 6px;
   align-items: center;
   text-align: center;
