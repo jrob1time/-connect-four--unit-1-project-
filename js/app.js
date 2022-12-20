@@ -78,11 +78,12 @@ function updateMessage() {
   }
 }
 function handleClick(evt) {
+
   let crIdx = +evt.target.id.replace('cr','')
   if (board[crIdx] !== null) {
       return
-  // } else if (winner === true) {
-  //     return
+  } else if (winner === true) {
+      return
   }
   placeToken(crIdx)
   checkForTie()
