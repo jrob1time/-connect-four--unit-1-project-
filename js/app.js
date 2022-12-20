@@ -29,6 +29,13 @@ const circleEls = document.querySelectorAll('.cir')
 const messageEl = document.getElementById('message')
 const resetBtnEl = document.getElementById('reset-button')
 
+
+
+/*----------------------------- Audio  -----------------------------*/
+
+const winningAudio = new Audio('./assets/clapping.mp3')
+const tokenAudio = new Audio('./assets/tokensound.wav')
+
 /*----------------------------- Event Listeners -----------------------------*/
 
 document.querySelector('.board').addEventListener('click', handleClick)
@@ -61,8 +68,11 @@ function updateBoard() {
   board.forEach((element, idx) => {
       if (element === 1) {
         circleEls[idx].innerText = '👌'
+        tokenAudio.play()
       } else if (element === -1) {
         circleEls[idx].innerText = '🤘'
+        // be sure to place player slowly to allow sound to cycle
+        tokenAudio.play()
       } else {
         circleEls[idx].innerText = ''
       }
@@ -75,6 +85,7 @@ function updateMessage() {
       messageEl.textContent = "You Tied!"
   } else {
       messageEl.textContent = (turn === 1 ? 'Blue player wins!' : 'Black player wins!')
+      winningAudio.play()
   }
 }
 function handleClick(evt) {
