@@ -69,10 +69,10 @@ function render() {
 function updateBoard() {
   board.forEach((element, idx) => {
       if (element === 1) {
-        circleEls[idx].innerText = 'player1img'
+        circleEls[idx].innerText = '🥞'
         tokenAudio.play()
       } else if (element === -1) {
-        circleEls[idx].innerText = 'player2img'
+        circleEls[idx].innerText = '🧇'
         // be sure to place player slowly to allow sound to cycle
         tokenAudio.play()
       } else {
