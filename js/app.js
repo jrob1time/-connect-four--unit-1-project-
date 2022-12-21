@@ -82,7 +82,7 @@ function updateBoard() {
 }
 function updateMessage() {
   if (winner === false && tie === false) {
-      messageEl.textContent = (turn === 1 ? 'Pancake it is your turn.' : 'Waffle it is your turn.')
+      messageEl.textContent = (turn === 1 ? 'Pancake its your turn.' : 'Waffle its your turn.')
   } else if (winner === false && tie === true) {
       messageEl.textContent = "You Tied!"
   } else {
@@ -103,6 +103,7 @@ function handleClick(evt) {
   checkForWinner()
   switchPlayerTurn()
   render()
+  myFunction()
 }
 function placeToken(idx) {
   for (let i = (idx + 35); i > -1; i-=7){
