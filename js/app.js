@@ -31,10 +31,12 @@ const resetBtnEl = document.getElementById('reset-button')
 
 
 
-/*----------------------------- Audio  -----------------------------*/
+/*----------------------------- Audio & Images -----------------------------*/
 
 const winningAudio = new Audio('./assets/clapping.mp3')
 const tokenAudio = new Audio('./assets/tokensound.wav')
+const player1img = new Image('./assets/pancake.png')
+const player2img = new Image('./assets/waffle.png')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -67,10 +69,10 @@ function render() {
 function updateBoard() {
   board.forEach((element, idx) => {
       if (element === 1) {
-        circleEls[idx].innerText = '👌'
+        circleEls[idx].innerText = 'player1img'
         tokenAudio.play()
       } else if (element === -1) {
-        circleEls[idx].innerText = '🤘'
+        circleEls[idx].innerText = 'player2img'
         // be sure to place player slowly to allow sound to cycle
         tokenAudio.play()
       } else {
@@ -80,11 +82,11 @@ function updateBoard() {
 }
 function updateMessage() {
   if (winner === false && tie === false) {
-      messageEl.textContent = (turn === 1 ? 'Blue players turn.' : 'Black players turn.')
+      messageEl.textContent = (turn === 1 ? 'Pancake it is your turn.' : 'Waffle it is your turn.')
   } else if (winner === false && tie === true) {
       messageEl.textContent = "You Tied!"
   } else {
-      messageEl.textContent = (turn === 1 ? 'Blue player wins!' : 'Black player wins!')
+      messageEl.textContent = (turn === 1 ? 'Pancake wins!' : 'Waffle wins!')
       winningAudio.play()
   }
 }
