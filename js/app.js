@@ -35,8 +35,8 @@ const resetBtnEl = document.getElementById('reset-button')
 
 const winningAudio = new Audio('./assets/clapping.mp3')
 const tokenAudio = new Audio('./assets/tokensound.wav')
-const player1img = new Image('../assets/pancake.png')
-const player2img = new Image('../assets/waffle.png')
+// const player1img = url ('./assets/pancake.png')
+// const player2img = url ('./assets/waffle.png')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -69,10 +69,10 @@ function render() {
 function updateBoard() {
   board.forEach((element, idx) => {
       if (element === 1) {
-        circleEls[idx].innerText = '🥞'
+        circleEls[idx].innerHTML = '<img id="icon" src= "./assets/pancake.png">'
         tokenAudio.play()
       } else if (element === -1) {
-        circleEls[idx].innerText = '🧇'
+        circleEls[idx].innerHTML = '<img id="icon" src= "./assets/waffle.png">'
         // be sure to place player slowly to allow sound to cycle
         tokenAudio.play()
       } else {
@@ -103,7 +103,6 @@ function handleClick(evt) {
   checkForWinner()
   switchPlayerTurn()
   render()
-  myFunction()
 }
 function placeToken(idx) {
   for (let i = (idx + 35); i > -1; i-=7){
