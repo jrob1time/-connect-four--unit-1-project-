@@ -3,9 +3,9 @@
 ![A completed game of Connect Four on a 7x6 board between pancakes and waffles.](./assets/readmeimg.png)
 
 
-With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUESTIONs: Pancakes or waffles? Connect Four is a two-player connection board game, in which the players choose a color and then take turns dropping colored tokens into a seven-column, six-row vertically suspended grid. The player tokens were chosen with this breakfast theme in mind referencing player one as a pancake and player two as a waffle. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens. Connect Four is a solved game. The first player can always win by playing the right moves. The overall design was done with a high contrast color template to incorporate a form of accessibility allowing for this breakfast theme of traditional connect four to evolve over time. As well as a playful syrup and butter background to round out the styling of the game. Enjoy! 
+With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUESTIONs:>Pancakes or waffles?> Connect Four is a two-player connection board game, in which the players choose a color and then take turns dropping colored tokens into a seven-column, six-row vertically suspended grid. The player tokens were chosen with this breakfast theme in mind referencing player one as a pancake and player two as a waffle. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens. Connect Four is a solved game. The first player can always win by playing the right moves. The overall design was done with a high contrast color template to incorporate a form of accessibility allowing for this breakfast theme of traditional connect four to evolve over time. As well as a playful syrup and butter background to round out the styling of the game. Enjoy! 
 
-## [PLAY THE GAME HERE!](https://connectfour-unit1project-jrobinson.netlify.app/) 🎲
+# [PLAY THE GAME HERE!](https://connectfour-unit1project-jrobinson.netlify.app/) 🎲
 
 ## Technologies used 👨‍💻
 
