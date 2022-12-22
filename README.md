@@ -16,9 +16,7 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 
 ## [Planning Doc](https://docs.google.com/document/d/1-Gs42W7Ls-A1QS3JFA3NVNXFPTjL007KFdtw0VrpOtY/edit?usp=sharing) 🗒️
 
-## Credits 🙏
-
-## Attributions
+## Credits & Attributions 🙏
 
 While the below disclaimers are technically required by their license-holders I would like to also sincerely thank all the creators whose work makes this site look great. Thank you!
 
