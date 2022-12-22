@@ -1,7 +1,5 @@
 body {
-  /* text-align: center; */
   font-family: 'Kanit', sans-serif;
-  /* height: 150vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,13 +11,8 @@ body {
   background-color: #1D3C91;
   background-size: 1050px;
   letter-spacing: 1px;
-  background-position: 1cm;
 }
 div.innerText {
-justify-content: center;
-align-items: center;
-/* padding: 20px; */
-margin: 4px;
 font-size: medium;
 border: 2px solid #597CDE;
 background-color:  hsl(40, 92%, 72%);
@@ -32,16 +25,12 @@ section.board {
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
   margin: 30px;
-  /* border-radius: 8%; */
-  /* padding: 15px; */
 }   
 div {
-  font-size: 5vmin;
   border-radius: 50px;
   margin: 6px;
   align-items: center;
   text-align: center;
-  vertical-align: middle;
 }
 button {
   background-color:  hsl(40, 92%, 72%);
@@ -49,11 +38,8 @@ button {
   color: #000000;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   border-radius: 15px;
-  font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 18px;
   font-family: 'Kanit', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -64,7 +50,7 @@ button:hover {
   color: rgb(255, 255, 255);
 }
 .cir {
-  border: 2px solid hsl(40, 92%, 72%);;
+  border: 2px solid hsl(40, 92%, 72%);
   background-color:  #597CDE;
   box-shadow: 3px 3px 3px #020746;
   display: flex;
@@ -72,8 +58,8 @@ button:hover {
   align-items: center;
 }
 #icon {
-  object-fit: cover;
-  height: 6vmin;
+  object-fit:cover;
+  height: 5vmin;
 }
 #icon:hover{
   cursor: pointer;
