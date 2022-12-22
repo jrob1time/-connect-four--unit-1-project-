@@ -31,7 +31,7 @@ const resetBtnEl = document.getElementById('reset-button')
 
 
 
-/*----------------------------- Audio & Images -----------------------------*/
+/*----------------------------- Audio -----------------------------*/
 
 const winningAudio = new Audio('./assets/clapping.mp3')
 const tokenAudio = new Audio('./assets/glitch.mp3')
