@@ -72,6 +72,16 @@ button:hover {
 #icon {
   object-fit: cover;
   height: 6vmin;
+  animation: rotating 2s linear infinate;
+}
+#icon:hover{
+  cursor: pointer;
+  transition: 0.9s;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+
+
 }
 .innerText > h1{
   font-size: 2.8em;
