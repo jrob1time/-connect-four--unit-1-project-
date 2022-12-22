@@ -72,7 +72,6 @@ function updateBoard() {
         tokenAudio.play()
       } else if (element === -1) {
         circleEls[idx].innerHTML = '<img id="icon" src= "./assets/waffle.png">'
-        // be sure to place player slowly to allow sound to cycle
         tokenAudio.play()
       } else {
         circleEls[idx].innerText = ''
@@ -91,7 +90,6 @@ function updateMessage() {
 }
 function handleClick(evt) {
   let crIdx = +evt.target.id.replace('cr','')
-  // console.log(crIdx);
   if (board[crIdx] !== null) {
       return
   } else if (winner === true) {

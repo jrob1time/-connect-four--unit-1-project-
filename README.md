@@ -14,7 +14,7 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 - HTML
 - git
 
-## [Planning Materials Doc](https://docs.google.com/document/d/1-Gs42W7Ls-A1QS3JFA3NVNXFPTjL007KFdtw0VrpOtY/edit?usp=sharing)
+## [Planning Materials Doc](https://docs.google.com/document/d/1-Gs42W7Ls-A1QS3JFA3NVNXFPTjL007KFdtw0VrpOtY/edit?usp=sharing)🗒️
 
 ## Credits 🙌
 
