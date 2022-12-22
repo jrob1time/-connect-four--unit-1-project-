@@ -17,7 +17,8 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 
 ## Credits 🙌
 
-- [Attributions]
+## Attributions
+
 While the below disclaimers are technically required by their license-holders I would like to also sincerely thank all the creators whose work makes this site look great. Thank you!
 
 Connect four uses the google font families of "Chango' and "Kanit".
