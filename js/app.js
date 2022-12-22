@@ -35,8 +35,7 @@ const resetBtnEl = document.getElementById('reset-button')
 
 const winningAudio = new Audio('./assets/clapping.mp3')
 const tokenAudio = new Audio('./assets/glitch.mp3')
-// const player1img = url ('./assets/pancake.png')
-// const player2img = url ('./assets/waffle.png')
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -86,7 +85,7 @@ function updateMessage() {
   } else if (winner === false && tie === true) {
       messageEl.textContent = "You Tied!"
   } else {
-      messageEl.textContent = (turn === 1 ? 'Pancake wins!' : 'Waffle wins!')
+      messageEl.textContent = (turn === 1 ? 'Pancake wins!' : 'Waffle wins!' || turn === -1 ? 'Waffle wins!' : 'Pancake wins!')
       winningAudio.play()
   }
 }
