@@ -12,9 +12,7 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 - CSS
 - JavaScript
 - HTML
-- git
 - gitHub
-- clippy
 - netlify
 - photoshop
 
