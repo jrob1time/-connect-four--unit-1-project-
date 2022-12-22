@@ -14,7 +14,7 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 - HTML
 - git
 
-## [Planning Materials Doc](https://docs.google.com/document/d/1-Gs42W7Ls-A1QS3JFA3NVNXFPTjL007KFdtw0VrpOtY/edit?usp=sharing)🗒️
+## [Planning Doc](https://docs.google.com/document/d/1-Gs42W7Ls-A1QS3JFA3NVNXFPTjL007KFdtw0VrpOtY/edit?usp=sharing)🗒️
 
 ## Credits 🙌
 
@@ -42,6 +42,7 @@ Syrup:
 - Rework the icon placement to allow for a spin function on the hover.
 - Delete redundant css.
 - Optimize display: flex; for overall layout and responsiveness.
+- Delete redundant javascript.
 
 ## Ice Box 🧊
 
