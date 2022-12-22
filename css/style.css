@@ -31,6 +31,7 @@ div {
   margin: 6px;
   align-items: center;
   text-align: center;
+  
 }
 button {
   background-color:  hsl(40, 92%, 72%);
@@ -73,4 +74,5 @@ button:hover {
   letter-spacing: 1px;
   font-weight: 400;
   font-family: 'Chango', cursive;
+  
 }
