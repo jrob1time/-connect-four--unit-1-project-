@@ -11,6 +11,7 @@ body {
   background-color: #1D3C91;
   background-size: 1050px;
   letter-spacing: 1px;
+  background-blend-mode: lighten;
 }
 div.innerText {
 font-size: medium;
