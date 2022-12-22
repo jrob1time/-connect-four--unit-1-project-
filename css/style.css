@@ -25,6 +25,7 @@ background-color:  hsl(40, 92%, 72%);
 }
 section.board {
   display: grid;
+  justify-content: center;
   grid-template-rows: repeat(6, 10vmin);
   grid-template-columns: repeat(7, 10vmin);
   grid-gap: 0vmin;
