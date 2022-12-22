@@ -7,7 +7,7 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 
 ## [Play the game here](https://connectfour-unit1project-jrobinson.netlify.app/)
 
-## Technologies used 💾
+## Technologies used 👨‍💻
 
 - CSS
 - JavaScript
@@ -16,7 +16,7 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 
 ## [Planning Doc](https://docs.google.com/document/d/1-Gs42W7Ls-A1QS3JFA3NVNXFPTjL007KFdtw0VrpOtY/edit?usp=sharing)🗒️
 
-## Credits 🙌
+## Credits 🙏
 
 ## Attributions
 
@@ -37,14 +37,14 @@ Butter:
 Syrup: 
 <a href="https://www.flaticon.com/free-icons/syrup" title="syrup icons">Syrup icons created by Smashicons - Flaticon</a>
 
-## Recent Changes 🧹
+## Recent Changes 👏
 
 - Rework the icon placement to allow for a spin function on the hover.
 - Delete redundant css.
 - Optimize display: flex; for overall layout and responsiveness.
 - Delete redundant javascript.
 
-## Ice Box 🧊
+## Ice Box 🍧
 
 - [ ] Apply more responsive features: fix background image when it is smaller | increase board size for  viewer on a phone.
 - [x] add spin to icon on pointer hover
