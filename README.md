@@ -44,7 +44,7 @@ Syrup:
 
 ## Ice Box 🧊
 
-- [ ] Apply more responsiveness features: fix background image when it is smaller | increase board size for  viewer on a phone.
+- [ ] Apply more responsive features: fix background image when it is smaller | increase board size for  viewer on a phone.
 - [x] add spin to icon on pointer hover
 - [ ] Dark Mode
 - [ ] Confetti!
