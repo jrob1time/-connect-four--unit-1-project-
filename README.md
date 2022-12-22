@@ -46,10 +46,11 @@ Syrup:
 
 ## Ice Box 🍧
 
-- [ ] Apply more responsive features: fix background image when it is smaller | increase board size for  viewer on a phone.
+- [ ] add mute button for SFX 
 - [x] add spin to icon on pointer hover
 - [ ] Dark Mode
 - [ ] Confetti!
 - [ ] Add bounce to player icons
 - [ ] Add drop to player icons
+- [ ] Add winning 4 pieces flash animation to identify winning token placement
 - [x] Sound
