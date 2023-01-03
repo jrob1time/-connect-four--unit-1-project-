@@ -7,7 +7,7 @@ With a personal spin being inspired by one GA Bootcamps MORNING ATTENDANCE QUEST
 
 # [PLAY THE GAME HERE!](https://connectfour-unit1project-jrobinson.netlify.app/) 🎲
 
-## Technologies used 👨‍💻
+## Technologies Used 👨‍💻
 
 - CSS
 - JavaScript
@@ -46,8 +46,8 @@ Syrup:
 
 ## Ice Box 🍧
 
-- [ ] add mute button for SFX 
-- [x] add spin to icon on pointer hover
+- [ ] Add mute button for SFX 
+- [x] Add spin to icon on pointer hover
 - [ ] Dark Mode
 - [ ] Confetti!
 - [ ] Add bounce to player icons
